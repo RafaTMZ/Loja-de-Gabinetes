@@ -1,0 +1,31 @@
+POST http://localhost:3333/gabinete
+Content-Type: application/json
+
+{
+    "modelo": "Gabinete 1",
+    "marca": "abc",
+    "preco": "400"
+}
+
+###
+
+GET http://localhost:3333/gabinete
+
+###
+
+GET http://localhost:3333/gabinete?search=IFMS
+
+###
+
+PUT http://localhost:3333/gabinetes/808acbe6-c87f-4a84-b5ed-50ec19021805
+Content-Type: application/json
+
+{
+    "modelo": "Gabinete 2",
+    "marca": "cba",
+    "preco": "100"
+}
+
+###
+
+DELETE http://localhost:3333/gabinetes/808acbe6-c87f-4a84-b5ed-50ec19021805
